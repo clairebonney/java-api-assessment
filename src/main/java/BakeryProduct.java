@@ -1,7 +1,7 @@
 public class BakeryProduct {
     public int id;
     private String name;
-    private String description;
+    private String description; 
     private Double price;
 
     BakeryProduct Product = new BakeryProduct();
