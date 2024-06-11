@@ -1,3 +1,4 @@
+package com.cbfacademy.apiassessment.Bakery.Customer;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,12 +16,12 @@ public class Customer {
 private int id;
 private String username;
 public String email;
-//public String firstName; -does a customer really need a first and last name?? No?
+public String name; //our customer does not need a first and last name
 //public String lastName;
 
-Customer customer = new Customer();
+//Customer customer = new Customer();
 //constructor
-public Customer (String username, String email) {
+public Customer (String username, String email, String name) {
         //this.id = id; -no longer needed as a parameter b'cos it is auto generated
         this.username = username;
         this.email = email;
@@ -29,7 +30,7 @@ public Customer (String username, String email) {
     }
 
     public Customer (){
-        this("custxx", "email@.com");
+        this("custxx", "email@.com", "person");
     }
 
 public int getId() {
@@ -50,13 +51,13 @@ public String getEmail() {
 public void setEmail(String email) {
     this.email = email;
 }
-/*public String getFirstName() {
-    return firstName;
+public String getName() {
+    return name;
 }
-public void setFirstName(String firstName) {
-    this.firstName = firstName;
+public void setName(String name) {
+    this.name = name;
 }
-public String getLastName() {
+/*public String getLastName() {
     return lastName;
 }
 public void setLastName(String lastName) {

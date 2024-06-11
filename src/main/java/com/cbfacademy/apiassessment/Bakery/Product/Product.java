@@ -1,3 +1,4 @@
+package com.cbfacademy.apiassessment.Bakery.Product;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,8 +9,9 @@ import jakarta.persistence.Table;
 @Entity // This tells Hibernate to make a table out of this class
 @Table(name = "Products")
 
-public class BakeryProduct {
+public class Product {
   @Id
+  
   @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
     private String name;
@@ -17,7 +19,7 @@ public class BakeryProduct {
     private Double price;
 
 
-    public BakeryProduct (String name, String description, double price) {
+    public Product (String name, String description, double price) {
         this.name = name;
         this.description = description;
         this.price = price; 
