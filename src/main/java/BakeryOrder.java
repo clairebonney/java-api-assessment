@@ -1,30 +1,40 @@
-//import the BakeryUser and BakeryProduct!!
+//import the BakeryUser and BakeryProduct??
 
 public class BakeryOrder {
-    public int id;
-    public int bakeryUserId;  //use the id from the user class
-    public int bakeryProductId;  //use the id from the product class
-    public double bakeryProductprice;  //use the price from the product class
+    public int orderId;
+    //public int bakeryUserId;  //use the id from the user class
+    //public int bakeryProductId;  //use the id from the product class
+    //public double bakeryProductprice;  //use the price from the product class
     public int quantity;
     public double totalPrice;  //multiply the product price and qty
 
-    BakeryOrder Order = new BakeryOrder();
+    /*How do I pull in data from 2 classes?? extends only works for 1 class
 
-    public int getId() {
-        return id;
+    */
+
+    //BakeryOrder order = new BakeryOrder();
+
+    public Order (int orderId, int quantity, int totalPrice){
+        super(bakeryProductId, bakeryUserId);
+
+        this.order = order;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getOrderId() {
+        return orderId;
     }
 
-    public int getBakeryUserId() {
+    public void setId(int OrderId) {
+        this.orderId = OrderId;
+    }
+
+    /*public int getBakeryUserId() {
         return bakeryUserId;
     }
 
     public int getBakeryProductId() {
         return bakeryProductId;
-    }
+    }*/
 
     public int getQuantity() {
         return quantity;
@@ -34,25 +44,25 @@ public class BakeryOrder {
         this.quantity = quantity;
     }
 
-    public double getBakeryProductprice() {
+    /*public double getbakeryProductprice() {
         return bakeryProductprice;
     }
 
     public double getTotalPrice() {
-        double totalPrice = (getBakeryProductprice() * this.quantity);
+        double totalPrice = (getbakeryProductprice() * this.quantity);
         return totalPrice;
-    }
+    }*/
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
 
     public BakeryOrder getOrder() {
-        return Order;
+        return order;
     }
 
     public void setOrder(BakeryOrder order) {
-        Order = order;
+        this.order = order;
     }
 
 
