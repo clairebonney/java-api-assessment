@@ -27,14 +27,15 @@ public class Order {
     private int quantity;
     private double totalPrice;  //multiply the product price and qty
 
-    @ManyToOne(cascade = CascadeType.ALL) //ManytoOne refers to the relationship between the customer and orders.  Many orders can placed by one customer
+   /* @ManyToOne(cascade = CascadeType.ALL) //ManytoOne refers to the relationship between the customer and orders.  Many orders can placed by one customer
     @JoinColumn(name = "customerId")
     private Customer customer;
     @ManyToOne(cascade = CascadeType.ALL) /*Many orders can be placed on one product.  The ManyToOne relationship defines how many products the cust can order.  If I make the relationship ManyToMany, a cust can order more than 1 product.  If I have many products in my bakery, and the relationship is ManyToOne, a customer can still only order 1 product.  If I make it ManyToMany, a customer can order as many products as they want.
-    OneToOne or ManyToMany defines how many product a customer can order*/
+    OneToOne or ManyToMany defines how many product a customer can order
     @JoinColumn(name = "productId")
 
     private Product product;
+    */
 
 
 

@@ -37,7 +37,7 @@ public class CustomerService {
     }
 
     /**
-     * Retrieve a Cstomer by their ID.
+     * Retrieve a Customer by their ID.
      *
      * @param id The ID of the Customer to retrieve.
      * @return The Customer with the specified ID, or null if not found.
@@ -61,7 +61,8 @@ public class CustomerService {
         //change to new values
         customer.setUsername (updatedCustomer.getUsername());
         customer.setEmail (updatedCustomer.getEmail());
-        customer.setName (updatedCustomer.getName());
+        customer.setFirstName (updatedCustomer.getFirstName());
+        customer.setLastName (updatedCustomer.getLastName());
     
     
         return customerRepository.save(customer);  
