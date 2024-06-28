@@ -4,17 +4,17 @@ The Bakery API is an api that enables users to create a the various elements of 
 
 Currently, only the **_customer_** function is available
 
-# **Functionality**
+## **Functionality**
 Authorised users of the Bakery can Create, Read, Update and Delete bakery customers and Products
 
-# **Setup and Installation**
+## **Setup and Installation**
 1. Clone the repository: `git clone https://github.com/clairebonney/java-api-assessment.git`
 2. Navigate to the project directory: `cd Bakery`
 
-# **How to use Bakery API**
+## **How to use Bakery API**
 Open Postman, and begin to send messages to perform CRUD funcitons -Create (Post), Read (Get), Update (Put) and Delete (Delete)
 
-# **Postman endpoints:**
+## **Postman endpoints:**
 
 1. ### To **_Create_** a new customer
 
