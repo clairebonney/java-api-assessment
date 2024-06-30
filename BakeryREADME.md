@@ -28,19 +28,19 @@ Open Postman, and begin to send messages to perform CRUD funcitons -Create (Post
     "lastName": "Doe"
 }
 
-2. ### To **_Read_** a list of all customers
+2. ### To **_Read_** the details of all customers
 
 **GET**: http://localhost:8080/api/customers 
 
 Empty Message
 
-3. ### To **_Read_** a list of a customers by id
+3. ### To **_Read_** the details of a customer by id
 
 **GET**: http://localhost:8080/api/customers/{id} 
 
 Empty Message
 
-4. ### To **_Update_** a customer by id
+4. ### To **_Update_** the details of a customer by id
 
 **PUT**: http://localhost:8080/api/customers/{id}
 
@@ -53,7 +53,7 @@ Empty Message
     "lastName": "Doe"
 }
 
-5. ###  To **_Delete_** a customer by id
+5. ###  To **_Delete_** the details of a customer by id
 
 **DELETE**: http://localhost:8080/api/customers/{id}
 
